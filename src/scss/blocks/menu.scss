@@ -1,0 +1,318 @@
+.left__sidebar {
+  .menu__container {
+    display: none;
+  }
+
+  .menu {
+    width: 308px;
+
+    .menu__heading {
+      display: flex;
+      padding: 30px 0px 0px 22px;
+
+      .menu__search {
+        margin: 5px 0px 0px 118px;
+      }
+
+      .menu__search-image {
+        cursor: pointer;
+      }
+    }
+
+    .menu__main {
+      display: flex;
+      flex-direction: column;
+      padding-top: 37px;
+      gap: 28px;
+
+      .menu__main__container {
+        .menu__main__container-pages {
+          padding-left: 24px;
+          text-decoration: none;
+          color: #1b1c21;
+        }
+
+        .menu__main__container-pages:hover {
+          padding-left: 20px;
+          border-left: 4px solid #41f6d7;
+          border-radius: 2px;
+          color: #7e7e82;
+        }
+      }
+    }
+
+    .menu__contacts {
+      margin: 291px 0px 0px 19px;
+      width: 196px;
+
+      .menu__contacts__icons {
+        display: flex;
+        gap: 16px;
+      }
+
+      .menu__contacts__mail {
+        margin-top: 17px;
+      }
+
+      .menu__contacts__phone {
+        margin-top: 12px;
+
+        .menu__contatcs__phone-text {
+          font-size: 24px;
+          font-family: 'TT Lakes Bold';
+          letter-spacing: -0.6px;
+        }
+      }
+    }
+
+    .menu__language {
+      display: flex;
+      gap: 7px;
+      padding: 41px 0px 0px 21px;
+
+      .menu__language-href {
+        font-size: 16px;
+        text-decoration: none;
+        color: #1b1c21;
+        text-transform: uppercase;
+      }
+
+      .menu__language-href:hover {
+        color: #7e7e82;
+        transition: All 0.3s ease;
+      }
+
+      .menu__language__ru-href {
+        color: #7e7e82;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .menu__popup-call {
+      display: none;
+    }
+    .menu__popup-feedback {
+      display: none;
+    }
+    .menu__container {
+      display: flex;
+      flex-direction: column;
+
+      .menu__media {
+        display: flex;
+        width: 768px;
+        height: 88px;
+
+        .menu__media__leftsidebar {
+          display: flex;
+          width: 50%;
+          height: 88px;
+          margin-left: 24px;
+          align-items: center;
+          gap: 20px;
+        }
+
+        .menu__media__line {
+          width: 2px;
+          height: 28px;
+          background-color: #eaeaea;
+          border-radius: 1px;
+        }
+
+        .menu__media__rightsidebar {
+          display: flex;
+          width: 50%;
+          justify-content: flex-end;
+          margin-right: 24px;
+          gap: 20px;
+          align-items: center;
+
+          .menu__media__icons-common {
+            display: flex;
+            gap: 16px;
+          }
+        }
+      }
+
+      .menu-popup__container {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        position: fixed;
+        background-color: azure;
+        width: 100%;
+        height: 100%;
+
+        .menu-popup {
+          width: 320px;
+          height: 1024px;
+          box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+
+          .menu-popup__close {
+            display: flex;
+
+            .menu-popup__close-image {
+              width: 40px;
+            }
+          }
+
+          .menu-popup__heading {
+            display: flex;
+            margin-left: 22px;
+            padding-top: 18px;
+
+            .menu-popup__logo {
+              margin-left: 16px;
+            }
+
+            .menu-popup__search {
+              margin: 5px 0px 0px 78px;
+            }
+
+            .menu-popup__search-image {
+              cursor: pointer;
+            }
+          }
+
+          .menu-popup__main {
+            display: flex;
+            flex-direction: column;
+            margin-top: 37px;
+            gap: 28px;
+
+            .menu-popup__main__container {
+              .menu-popup__main__container-pages {
+                padding-left: 24px;
+                text-decoration: none;
+                color: #1b1c21;
+              }
+
+              .menu-popup__main__container-pages:hover {
+                padding-left: 20px;
+                border-left: 4px solid #41f6d7;
+                border-radius: 2px;
+                color: #7e7e82;
+              }
+            }
+          }
+
+          .menu-popup__contacts {
+            margin: 268px 0px 0px 24px;
+            width: 196px;
+
+            .menu-popup__contacts__icons {
+              display: flex;
+              gap: 16px;
+            }
+
+            .menu-popup__contacts__mail {
+              margin-top: 17px;
+            }
+
+            .menu-popup__contacts__phone {
+              margin-top: 12px;
+
+              .menu-popup__contatcs__phone-text {
+                font-size: 24px;
+                font-family: 'TT Lakes Bold';
+                letter-spacing: -0.6px;
+              }
+            }
+          }
+
+          .menu-popup__language {
+            display: flex;
+            gap: 7px;
+            padding: 41px 0px 0px 21px;
+            text-transform: uppercase;
+
+            .menu-popup__language-href {
+              font-size: 16px;
+              color: #1b1c21;
+              text-decoration: none;
+            }
+
+            .menu-popup__language-href:hover {
+              color: #7e7e82;
+              transition: All 0.3s ease;
+            }
+
+            .menu-popup__language__ru-href {
+              color: #7e7e82;
+            }
+          }
+        }
+      }
+      .menu-popup__container.active {
+        transform: translateX(0%);
+      }
+    }
+
+    .menu {
+      display: none;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .menu__popup-call {
+      display: none;
+    }
+    .menu__popup-feedback {
+      display: none;
+    }
+
+    .menu__container {
+      width: 100%;
+
+      .menu__media {
+        width: 100%;
+        gap: 16px;
+
+        .menu__media__leftsidebar {
+          margin-left: 16px;
+          gap: 16px;
+
+          .menu__media__line-leftsidebar {
+            display: none;
+          }
+        }
+
+        .menu__media__rightsidebar {
+          .menu__media__icons-menu {
+            display: none;
+          }
+
+          .menu__media__line-rightsidebar {
+          }
+        }
+      }
+
+      .menu-popup__container {
+        .menu-popup {
+          .menu-popup__heading {
+            margin-left: 16px;
+            .menu-popup__search {
+              margin: 5px 0px 0px 94px;
+            }
+          }
+
+          .menu-popup__main {
+            margin-left: 0px;
+            margin-top: 23px;
+            gap: 24px;
+          }
+
+          .menu-popup__contacts {
+            margin: 32px 0px 0px 16px;
+          }
+
+          .menu-popup__language {
+            padding: 0;
+            margin-top: 8px;
+            margin-left: 16px;
+          }
+        }
+      }
+    }
+  }
+}

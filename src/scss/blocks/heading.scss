@@ -1,0 +1,222 @@
+$main-width: 1096px;
+
+.right__sidebar {
+  .heading {
+    padding-top: 42px;
+    width: $main-width;
+
+    .heading__services {
+      .heading__services__uphead {
+        width: $main-width;
+        display: flex;
+        justify-content: space-between;
+        .heading__services__uphead-header {
+          padding-left: 20px;
+          border-left: 4px solid #41f6d7;
+        }
+        .heading__services__uphead-image {
+          display: flex;
+
+          .heading__services__uphead-image__common {
+            display: flex;
+            line-height: 35px;
+          }
+
+          .heading__services__uphead-image__common:hover {
+            cursor: pointer;
+          }
+
+          .heading__services__uphead-image__repair {
+            margin-right: 32px;
+            width: 168px;
+            line-height: 44px;
+          }
+
+          .heading__services__uphead-image__text {
+            margin-right: 8px;
+          }
+
+          .heading__services__uphead-image__status {
+            width: 168px;
+            line-height: 44px;
+          }
+        }
+      }
+
+      .heading__services__subhead {
+        margin-left: 32px;
+        .heading__services__subhead-buttons {
+          width: 1064px;
+          padding-top: 9px;
+          display: flex;
+          flex-wrap: wrap;
+
+          .buttons__link {
+            width: 210px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            text-decoration: none;
+
+            .buttons__link-6 {
+              text-align: left;
+              margin-left: 12px;
+            }
+
+            .common__link {
+              text-decoration: none;
+              color: #7e7e82;
+              font-size: 16px;
+            }
+          }
+
+          .buttons__link:hover {
+            box-sizing: border-box;
+            line-height: 36px;
+            border: 2px solid #b8ffec;
+            border-radius: 6px;
+            cursor: pointer;
+          }
+
+          .buttons__link:last-child {
+            text-align: left;
+          }
+
+          .buttons__link:hover > .buttons__link-6 {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+    .heading__about {
+      display: flex;
+      padding: 20px 0px 0px 32px;
+
+      .heading__about__info {
+        width: 490px;
+
+        .heading__about__info-text {
+        }
+
+        .heading__about__info-furhter {
+          display: flex;
+          padding-top: 14px;
+
+          .heading__about__info-image {
+            margin-right: 16px;
+          }
+
+          .heading__further {
+            font-size: 16px;
+            font-family: 'TT Lakes Medium';
+            border-style: none;
+            background-color: azure;
+          }
+        }
+
+        .heading__about__info-furhter:hover {
+          cursor: pointer;
+        }
+
+        .heading__text:last-child {
+          margin-top: 25px;
+        }
+      }
+
+      .heading__about__image-container {
+        margin-left: 36px;
+        .heading__about__image {
+          width: 530px;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .heading {
+      width: 100%;
+
+      .heading__services {
+        .heading__services__uphead {
+          width: 100%;
+
+          .heading__services__uphead-image {
+            display: none;
+          }
+        }
+        .heading__services__subhead {
+          overflow-x: scroll;
+          height: 60px;
+          .heading__services__subhead-buttons {
+            width: 1280px;
+            .buttons__link:last-child {
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      .heading__about {
+        .heading__about__info {
+          width: 312px;
+
+          .heading__about__info-text {
+            .heading__text {
+              #more.off {
+                display: none;
+              }
+            }
+          }
+          .heading__about__info-furhter {
+            .heading__further {
+            }
+          }
+        }
+        .heading__about__image-container {
+          .heading__about__image {
+            width: 360px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 320px) {
+    .heading {
+      width: 100%;
+
+      .heading__services {
+        .heading__services__uphead {
+          .heading__services__uphead-header {
+            font-size: 28px;
+          }
+        }
+        .heading__services__subhead {
+          margin-left: 16px;
+        }
+      }
+
+      .heading__about {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 24px;
+
+        .heading__about__info {
+          margin-left: 16px;
+          width: 288px;
+        }
+
+        .heading__about__image-container {
+          margin-top: 16px;
+          margin-left: 0px;
+
+          .heading__about__image {
+            width: 320px;
+            border-radius: 0px;
+          }
+        }
+      }
+    }
+  }
+}

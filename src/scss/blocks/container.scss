@@ -1,0 +1,22 @@
+.container {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  background-color: azure;
+  font-family: 'TT Lakes', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 768px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 320px;
+    flex-direction: column;
+  }
+}

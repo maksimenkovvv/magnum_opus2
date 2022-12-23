@@ -1,0 +1,19 @@
+.left__sidebar {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'TT Lakes Medium';
+}
+
+@media (width: 768px) {
+  .left__sidebar {
+    width: 100%;
+    height: 88px;
+  }
+}
+
+@media (width: 320px) {
+  .left__sidebar {
+    width: 100%;
+    height: 88px;
+  }
+}

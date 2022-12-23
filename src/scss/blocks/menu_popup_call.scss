@@ -1,0 +1,111 @@
+.left__sidebar {
+  .menu__popup-call {
+    position: fixed;
+    width: 1440px;
+    height: 940px;
+    position: fixed;
+    background-color: white;
+    transform: translateX(+200%);
+    transition: transform 0.7s ease-in-out;
+
+    .menu__popup-call__container {
+      display: flex;
+      justify-content: flex-end;
+
+      .menu__popup-call__close {
+        padding: 32px 32px 0px 0px;
+
+        .menu__popup-call__close-img {
+          cursor: pointer;
+        }
+      }
+
+      .menu__popup-call__content {
+        width: 440px;
+        height: 940px;
+
+        .menu__popup-call__sidebar {
+          width: 376px;
+          margin: 40px 0px 0px 0px;
+
+          .menu__popup-call__call {
+            padding-left: 32px;
+            border-left: 4px solid #41f6d7;
+            border-radius: 2px;
+
+            .menu__popup-call__call-header {
+              font-family: 'TT Lakes';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 32px;
+              letter-spacing: -0.6px;
+              color: #1b1c21;
+            }
+          }
+        }
+      }
+
+      .menu__popup-call__form {
+        margin: 24px 0px 0px 32px;
+
+        .menu__popup-call__form-call {
+          width: 376px;
+          height: 48px;
+          padding-left: 12px;
+          background: #ffffff;
+          border: 1px solid #eaeaea;
+          border-radius: 8px;
+          font-family: 'TT Lakes Regular';
+        }
+      }
+
+      .menu__popup-call__approval {
+        margin: 16px 0px 0px 32px;
+
+        .menu__popup-call__approval-text {
+          color: #7e7e82;
+        }
+
+        .menu__popup-call__approval-text > span {
+          color: #ff3e79;
+          cursor: pointer;
+        }
+      }
+
+      .menu__popup-call__button__container {
+        display: flex;
+        margin-top: 23px;
+        justify-content: flex-end;
+
+        .menu__popup-call__button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          width: 136px;
+          height: 32px;
+          gap: 11px;
+          border: none;
+          background: #ff3e79;
+          border-radius: 16px;
+
+          .menu__popup-call__button-text {
+            font-family: 'TT Lakes';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: -0.15px;
+            color: #fff;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  .menu__popup-call.active {
+    transform: translateX(0);
+  }
+}
