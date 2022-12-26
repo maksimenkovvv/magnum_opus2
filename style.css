@@ -239,7 +239,8 @@ body {
           .left__sidebar .menu__container .menu-popup__container .menu-popup .menu-popup__language .menu-popup__language__ru-href {
             color: #7e7e82; }
     .left__sidebar .menu__container .menu-popup__container.active {
-      transform: translateX(0%); }
+      transform: translateX(0%);
+      z-index: 2; }
   .left__sidebar .menu {
     display: none; } }
 
