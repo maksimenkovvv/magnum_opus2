@@ -177,7 +177,8 @@ body {
       position: fixed;
       background-color: azure;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      z-index: 2; }
       .left__sidebar .menu__container .menu-popup__container .menu-popup {
         width: 320px;
         height: 1024px;
@@ -283,7 +284,8 @@ body {
   position: fixed;
   background-color: white;
   transform: translateX(200%);
-  transition: transform 0.7s ease-in-out; }
+  transition: transform 0.7s ease-in-out;
+  z-index: 2; }
   .left__sidebar .menu__popup-call .menu__popup-call__container {
     display: flex;
     justify-content: flex-end; }
@@ -352,7 +354,8 @@ body {
           text-transform: uppercase; }
 
 .left__sidebar .menu__popup-call.active {
-  transform: translateX(0); }
+  transform: translateX(0);
+  z-index: 2; }
 
 .left__sidebar .menu__popup-feedback {
   position: fixed;
@@ -361,7 +364,8 @@ body {
   position: fixed;
   background-color: white;
   transform: translateX(200%);
-  transition: transform 0.7s ease-in-out; }
+  transition: transform 0.7s ease-in-out;
+  z-index: 2; }
   .left__sidebar .menu__popup-feedback .menu__popup-feedback__container {
     display: flex;
     justify-content: flex-end; }
@@ -437,7 +441,8 @@ body {
               text-transform: uppercase; }
 
 .left__sidebar .menu__popup-feedback.active {
-  transform: translateX(0); }
+  transform: translateX(0);
+  z-index: 2; }
 
 .right__sidebar .heading {
   padding-top: 42px;
